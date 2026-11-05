@@ -1,0 +1,93 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --color-ink: #1B1B1F;
+  --color-ivory: #F7F6F2;
+  --color-white: #FFFFFF;
+  --color-lavender: #B9A7F2;
+  --color-mint: #BFE7DC;
+  --color-lime: #D8F36A;
+  --color-coolgray: #85858D;
+  --color-bordergray: #E7E5E1;
+}
+
+@layer base {
+  body {
+    background-color: #F7F6F2;
+    color: #1B1B1F;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #1B1B1F;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F7F6F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D6D4CE;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #85858D;
+}
+
+/* Editorial selection */
+::selection {
+  background-color: #D8F36A;
+  color: #1B1B1F;
+}
+
+/* Micro-animations */
+.fade-in {
+  animation: fadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Shimmer placeholder for loading states */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(231, 229, 225, 0.4) 0%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(231, 229, 225, 0.4) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

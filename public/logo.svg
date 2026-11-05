@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 48" fill="none">
+  <!-- Monogram Sparkle Badge -->
+  <rect x="2" y="6" width="36" height="36" rx="10" fill="#1B1B1F" />
+  <path d="M14 28V18M14 23H22M22 28V18" stroke="#D8F36A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Mini editorial star/sparkle -->
+  <path d="M28 12L29.5 15.5L33 17L29.5 18.5L28 22L26.5 18.5L23 17L26.5 15.5L28 12Z" fill="#B9A7F2" />
+  
+  <!-- Primary Wordmark: INSPIRASI -->
+  <text x="48" y="27" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-weight="900" font-size="20" letter-spacing="1.5" fill="#1B1B1F">
+    INSPIRASI
+  </text>
+  
+  <!-- Secondary Wordmark: BY ANYA with editorial pill badge -->
+  <rect x="180" y="14" width="76" height="18" rx="9" fill="#BFE7DC" />
+  <text x="189" y="26.5" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-weight="700" font-size="9" letter-spacing="1.2" fill="#1B1B1F">
+    BY ANYA
+  </text>
+</svg>
